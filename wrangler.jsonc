@@ -1,0 +1,19 @@
+{
+  // くらしノートのAIの窓口。
+  //
+  // このファイルは「GitHubからそのまま配置する」ための設計図です
+  // （relay/ と同じ形）。置き場（KV）は持ちません——受け取ったものは
+  // Claude に渡して、返事を返したらそれで終わりです。
+  //
+  //   合言葉（AI_PATH）と鍵（ANTHROPIC_API_KEY）は .dev.vars.example に
+  //   書いてあります。配置の途中で「Secret」として尋ねられるので、
+  //   アプリの「道をつくる」で作った道と、Anthropic の Console で作った
+  //   鍵を貼ってください。ここ（設計図）に書かないのは、設計図が公開の
+  //   リポジトリに入っているからです。
+  "name": "kurashi-ai",
+  "main": "worker.js",
+  "compatibility_date": "2026-08-01",
+
+  // 食事の写真と健康の記録の行き来を、余計なところに残さないため。
+  "observability": { "enabled": false }
+}

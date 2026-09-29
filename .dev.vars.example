@@ -1,0 +1,18 @@
+# AIの窓口の合言葉になる道と、Claude の鍵。
+#
+# GitHubから配置するとき、Cloudflare がこのファイルを読んで
+# 「AI_PATH は？」「ANTHROPIC_API_KEY は？」と尋ねてきます（どちらも
+# Secret として保存されます）。
+#
+# AI_PATH は、くらしノートの 設定 → ダイエット → AIの窓口 →
+# 「道をつくる」で作ったものを、そのまま貼ってください。
+#
+#   例: /kn-pe6twzsqmjaq8kzu
+#
+# ANTHROPIC_API_KEY は、Anthropic の Console（https://console.anthropic.com）の
+# API Keys で作った sk-ant-… を貼ってください。
+#
+# どちらかが空のままだと、窓口は 500 を返して止まります——合言葉の無い
+# 窓口を、誰でもあなたの鍵で呼べる状態で公開しないためです。
+AI_PATH=
+ANTHROPIC_API_KEY=

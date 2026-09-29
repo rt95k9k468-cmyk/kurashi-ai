@@ -1,0 +1,16 @@
+{
+  "name": "kurashi-ai",
+  "private": true,
+  "description": "くらしノートのAIの窓口（鍵を預かり、Claude を呼ぶ）",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "test": "node worker.test.mjs"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.128.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4"
+  },
+  "type": "module"
+}
